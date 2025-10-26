@@ -30,13 +30,13 @@ This is a simple Python project where I randomly generate a maze, put a mouse on
 ## Demo
 
 ### 1. Matrix Initialization & User Input
-![Matrix/Initialization](images/input_and_maze_init.jpg)
+![Matrix/Initialization](images/input_and_maze_init.png)
 
 ### 2. Console Output (path search process)
-![Pathfinding Console Output](images/pathfinding_result_console.jpg)
+![Pathfinding Console Output](images/pathfinding_result_console.png)
 
 ### 3. Final Visualization
-![Maze Path Visualization](images/maze_path_visualization.jpg)
+![Maze Path Visualization](images/maze_path_visualization.png)
 
 ---
 
