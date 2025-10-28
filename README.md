@@ -1,61 +1,114 @@
 # mouse-maze-pathfinder
+
 # Mouse Maze Pathfinder 🐭🧀
 
-Hi!  
-This is a simple Python project where I randomly generate a maze, put a mouse on one side and a piece of cheese somewhere else, and try to find a path for the mouse using Depth-First Search (DFS) — with both console and graphical output.
+A simple Python project for finding a path in a randomly generated maze using a recursive Depth-First Search (DFS) algorithm.
 
----
+Project Overview
+This repository offers multiple implementations of a basic Python maze pathfinding challenge, where a 10x10 grid maze is randomly generated. The objective is to find a path for the mouse to reach the cheese starting from user-defined coordinates. The project includes three main files:
 
-## How It Works
+mouse-maze-pathfinder.py: The main script with visualization using matplotlib
 
-1. The code creates a 10x10 random matrix (0 = wall, 1 = open cell)
-2. You enter mouse and cheese positions (only on 1’s!)
-3. DFS tries to find if the mouse can reach the cheese
-4. The console shows each move and cells visited
-5. In the end, you’ll see a nice color map of the maze and the solution path
+mouse-cheese-graphic2.py: An alternative version with improved graphics and customized style
 
----
+mouse-cheese.py: A pure console, minimalistic version requiring no extra libraries
+
+Algorithm
+DFS is performed recursively in eight directions from the starting cell to locate the first valid path to the goal. If no such path exists, a message will be displayed.
 
 ## How to Run
 
-1. Make sure you have Python, and install matplotlib + numpy:
+Install requirements:
 
-2. Run the script:
+```
+pip install matplotlib numpy
+```
 
-3. Just follow the prompts for mouse and cheese positions  
-4. The program pops up an image of the maze, and also saves a screenshot to the `images` folder!
+Run the main version:
+
+```
+python mouse-maze-pathfinder.py
+```
+
+Run the simple console version:
+
+```
+python mouse-cheese.py
+```
+
+Run the improved graphics version:
+
+```
+python mouse-cheese-graphic2.py
+```
 
 ---
+
+## Input & Output
+The user enters mouse and cheese locations (integer values 1 to 10).
+
+If the coordinate is invalid (on a wall), an error message is shown.
+
+The first available path is found using DFS; visited cells, open paths, and walls are marked and shown in console or graphics:
+
+2: Visited cells
+
+1: Free path
+
+0: Wall
 
 ## Demo
 
 ### 1. Matrix Initialization & User Input
+
 ![Matrix/Initialization](images/input_and_maze_init.png)
 
 ### 2. Console Output (path search process)
+
 ![Pathfinding Console Output](images/pathfinding_result_console.png)
 
 ### 3. Final Visualization
+
 ![Maze Path Visualization](images/maze_path_visualization.png)
 
 ---
 
-## Notes
+Project Structure
+maze generation: 10x10 grid with border walls (zeros)
 
-- Finds only *one* path (not necessarily the shortest)
-- Every run gives you a new random maze!
-- Output is shown in both the console and as a graphic
-- Feedback or suggestions are welcome — open an issue if you want!
+user input: get mouse and cheese coordinates from user; validate inputs
 
----
+directions: move in 8 possible directions recursively
 
-## Ideas for Future
+DFS algorithm: recursively search for path from mouse to cheese
 
-- Add BFS for shortest path
-- Step-by-step movement animation
-- Custom maze import
+visualization: display maze and solution path using matplotlib or color styles (in advanced versions)
 
----
+Files
+mouse-maze-pathfinder.py: main interactive and visual version
 
-Made by Mohammadreza  
-Feel free to use, extend, or message me with ideas!
+mouse-cheese-graphic2.py: improved graphics and color-coded legend
+
+mouse-cheese.py: pure console/terminal minimalist version
+
+Future Improvements
+Implement Breadth-First Search (BFS) for shortest path finding
+
+Ability to load custom maze from a file
+
+GUI implementation (e.g., using tkinter or pygame)
+
+Unit tests for find_path function
+
+Animated step-by-step visualization
+
+Contribution Guide
+All suggestions, bug reports, and improvement proposals are welcome!
+
+Fork the repository
+
+Commit your changes
+
+Open a pull request
+
+Please open an issue for questions or ideas
