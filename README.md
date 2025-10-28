@@ -1,5 +1,3 @@
-
-
 # Mouse Maze Pathfinder 🐭🧀
 
 A simple Python project for finding a path in a randomly generated maze using a recursive Depth-First Search (DFS) algorithm.
@@ -45,6 +43,7 @@ python mouse-cheese-graphic2.py
 ---
 
 ## Input & Output
+
 The user enters mouse and cheese locations (integer values 1 to 10).
 
 If the coordinate is invalid (on a wall), an error message is shown.
@@ -56,6 +55,24 @@ The first available path is found using DFS; visited cells, open paths, and wall
 1: Free path
 
 0: Wall
+Example console output:
+
+```
+Initial Matrix:
+...
+Moving to: (3,7)
+Moving to: (2,8)
+...
+Cheese found!
+Final Matrix (2 = visited cells):
+...
+```
+
+If no path is possible:
+
+```
+No path found!
+```
 
 ## Demo
 
