@@ -67,6 +67,8 @@ The first available path is found using DFS; visited cells, open paths, and wall
 
 ![Pathfinding Console Output](images/pathfinding_result_console.png)
 
+![Pathfinding Console Output](images/matrix_result_console.png)
+
 ### 3. Final Visualization
 
 ![Maze Path Visualization](images/maze_path_visualization.png)
