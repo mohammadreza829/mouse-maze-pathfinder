@@ -18,12 +18,12 @@ for i in range(1, 11):
     print()
 
 
-mouse_row = int(input("\nEnter mouse row (1-10): "))
-mouse_col = int(input("Enter mouse col (1-10): "))
+mouse_row = int(input("\nEnter mouse row (1-10) : "))
+mouse_col = int(input("Enter mouse col (1-10) : "))
 
 
-cheese_row = int(input("Enter cheese row (1-10): "))
-cheese_col = int(input("Enter cheese col (1-10): "))
+cheese_row = int(input("Enter cheese row (1-10) : "))
+cheese_col = int(input("Enter cheese col (1-10) : "))
 
 
 if matrix[mouse_row][mouse_col] != 1:
